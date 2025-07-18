@@ -26,7 +26,6 @@ export const metadata = {
         card: 'summary_large_image',
         title: 'About Vista Valley Hotel | Our Story, Vision, and Commitment',
         description: 'Discover the story behind Vista Valley Hotel, a premier luxury destination nestled in a pristine valley.',
-        // It's recommended to use absolute URLs for Twitter card images in production
         images: ['/images/og-about.png'],
     },
 };
@@ -34,7 +33,6 @@ export const metadata = {
 async function AboutPage() {
     const cabins = await getCabins();
 
-    // For a real website, the URLs in jsonLd should be absolute (e.g., https://yourdomain.com/about)
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Hotel',

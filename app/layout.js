@@ -4,6 +4,8 @@ import { Josefin_Sans } from 'next/font/google';
 import Header from "@/app/_components/Header/Header";
 import Footer from '@/app/_components/Footer';
 import { ReservationProvider } from './_context/ReservationContext';
+import { Analytics } from '@vercel/analytics/next';
+
 
 const josefin = Josefin_Sans({
   subsets: ['latin'],
@@ -12,8 +14,7 @@ const josefin = Josefin_Sans({
 });
 
 export const metadata = {
-  // Note: It's recommended to use an absolute URL for metadataBase in production.
-  metadataBase: new URL('https://vista-valley-hotel.com'),
+  metadataBase: new URL('https://vista-valley.vercel.app/'),
   title: {
     default: 'Vista Valley Hotel | فندق فيستا فالي - Luxury Hotel in Marassi, North Coast',
     template: '%s | Vista Valley Hotel',
@@ -79,6 +80,7 @@ function RootLayout({ children }) {
           <div className='max-w-5xl mx-auto'>
             <ReservationProvider>
               {children}
+              <Analytics />
             </ReservationProvider>
           </div>
         </main>

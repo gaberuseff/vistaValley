@@ -18,7 +18,6 @@ export const metadata = {
         siteName: 'Vista Valley Hotel | فندق فيستا فالي',
         images: [
             {
-                // It's recommended to use absolute URLs for OG images in production
                 url: '/images/og-cabins.png',
                 width: 1200,
                 height: 630,
@@ -33,7 +32,6 @@ export const metadata = {
         card: 'summary_large_image',
         title: 'Luxury Cabins in Marassi | Vista Valley Hotel',
         description: 'Explore our luxury cabins at Vista Valley Hotel in Marassi, North Coast. Your sanctuary for an unparalleled escape into nature.',
-        // It's recommended to use absolute URLs for Twitter card images in production
         images: ['/images/og-cabins.png'],
     },
     alternates: {

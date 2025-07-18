@@ -36,9 +36,8 @@ function Features() {
 
                 <div className="mt-10 grid gap-8 lg:grid-cols-3 md:grid-cols-1">
                     {features.map((feature) => (
-                        <div key={feature.id} className="flex flex-col items-center p-8 rounded-md 
-                            bg-gray-50 dark:bg-gray-800/50">
-                            <div className="flex-shrink-0">
+                        <div key={feature.id} className="flex flex-col items-start p-8 rounded-md bg-gray-50 dark:bg-gray-800/50">
+                            <div>
                                 <feature.icon className="icon-secondary" />
                             </div>
 

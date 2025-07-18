@@ -5,7 +5,7 @@ function Hero() {
     return (
         <section className="relative mx-auto h-[300px] max-w-5xl overflow-hidden rounded-2xl sm:h-[400px] md:h-[550px]">
             <Image
-                src="/images/hero.webp"
+                src="/images/heroImages/hero.webp"
                 fill
                 priority
                 alt="A panoramic view of the Vista Valley hotel nestled in a lush, green valley at sunset."

@@ -6,7 +6,6 @@ import Footer from '@/app/_components/Footer';
 import { ReservationProvider } from './_context/ReservationContext';
 import { Analytics } from '@vercel/analytics/next';
 
-
 const josefin = Josefin_Sans({
   subsets: ['latin'],
   weight: ['300', '400', '600', '700'],
